@@ -33,8 +33,8 @@ def tokens_to_masked_ids(tokens, mask_ind):
     masked_ids = tokenizer.convert_tokens_to_ids(masked_tokens)
     return masked_ids
 
-BERT_VOCAB = 'uncased_L-12_H-768_A-12/vocab.txt'
-BERT_INIT_CHKPNT = 'uncased_L-12_H-768_A-12/bert_model.ckpt'
+BERT_VOCAB = './uncased_L-12_H-768_A-12/vocab.txt'
+BERT_INIT_CHKPNT = './uncased_L-12_H-768_A-12/bert_model.ckpt'
 
 tokenization.validate_case_matches_checkpoint(True, BERT_INIT_CHKPNT)
 tokenizer=tokenization.FullTokenizer(vocab_file=BERT_VOCAB, do_lower_case=True)

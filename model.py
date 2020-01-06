@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 
 
-BERT_CONFIG = 'uncased_L-12_H-768_A-12/bert_config.json'
+BERT_CONFIG = './uncased_L-12_H-768_A-12/bert_config.json'
 
 bert_config = modeling.BertConfig.from_json_file(BERT_CONFIG)
 
@@ -38,3 +38,4 @@ class Model:
             )
             logits = tf.matmul(input_tensor, embedding, transpose_b=True)
             self.logits = tf.nn.bias_add(logits, output_bias)
+
