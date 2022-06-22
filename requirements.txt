@@ -45,7 +45,7 @@ msgpack==0.6.2
 mugshot==0.4.1
 nltk==3.4.5
 npyscreen==4.10.5
-numpy==1.17.4
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.1.0
 packaging==19.2
